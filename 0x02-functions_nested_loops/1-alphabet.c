@@ -1,14 +1,22 @@
 #include "main.h"
 
 /**
- *  print_alphabet - prints the alpha in lowercase
+ *print_alphabet - prints alphabet a - z
+ *
+ *Description: when the function get called it prints a - z
+ *using the _putchar function and put new line
+ *at the end
+ *
+ *Return: 0-> shows end void no return
  */
+
 void print_alphabet(void)
 {
-	char ls;
+	char alpha;
 
-	for (ls = 'a'; ls <= 'z'; ls++)
-		_putchar(ls);
-
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
+	_putchar(alpha);
+	}
 	_putchar('\n');
 }
