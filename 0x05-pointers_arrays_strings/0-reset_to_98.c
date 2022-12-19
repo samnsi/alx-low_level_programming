@@ -13,7 +13,7 @@ int main(void)
 
 	n = 98;
 	p = &n;
-	printf("Address of 'n': %ls\n", &n);
-	printf("Value of 'p': %ls\n", p);
+	_putchar("Address of 'n': %ls\n", &n);
+	_putchar("Value of 'p': %ls\n", p);
 	return (0);
 }
