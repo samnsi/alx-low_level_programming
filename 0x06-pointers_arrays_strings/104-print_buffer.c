@@ -7,7 +7,6 @@
  *@size: size of byte
  *Return: void
  */
-
 void print_buffer(char *b, int size)
 {
 	int k, j, i;
@@ -18,7 +17,7 @@ void print_buffer(char *b, int size)
 	{
 	printf("\n");
 	return;
-
+	}
 	while (k < size)
 	{
 	j = size - k < 10 ? size - k : 10;
