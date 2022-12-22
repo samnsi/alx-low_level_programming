@@ -1,13 +1,20 @@
 #include "main.h"
 
 /**
- *set_string - Entry point
- *@s: input
- *@to: input
- *Return: Always 0 (Success)
+ *print_number - Prints an integer.
+ *@n: The integer to be printed.
  */
 
-void set_string(char **s, char *to)
+void print_number(int n)
 {
-	*s = to;
+	unsigned int num = n;
+
+	if (n < 0)
+	{
+	_putchar('-');
+	num = -num;
+	}
+	if ((num / 10) > 0)
+	print_number(num / 10);
+	_putchar((num % 10) + '0');
 }
