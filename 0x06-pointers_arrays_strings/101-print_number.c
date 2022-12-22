@@ -1,20 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_number - print an integer.
- * @n: integer to be printed.
+ *print_number - print an integer.
+ *@n: integer to be printed.
  */
 
-void print_number(long n)
+void print_number(int n)
 {
-	if (n < 0)
+	unsigned int num = n;
 
+	if (n < 0)
 	{
-	putchar('-');
-	n = -n;
+		_putchar(' ');
+		num = -num;
 	}
-	if (n / 10)
-	print(n / 10);
-	putchar(n % 10 + '0');
+	if ((num / 10) > 10)
+		print_number(num / 10);
+	_putchar((num % 10) + '0');
 }
