@@ -1,12 +1,9 @@
-#ifdef MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
-#include <stdio.h>
 
 /**
  *File: main.h
- *
  *Desc: Header file containing prototypes for all functions
- *
  *used in the 0x06. C - More pointers, arrays and strings directory.
  */
 
