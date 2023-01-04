@@ -1,27 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *  _puts_recursion - prints a string, followed by a new line
- *  @s: the string
- *  Return: void
+ * _puts_recursion - Prints a string followed by a new line
+ * @s: string
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 
 void _puts_recursion(char *s)
 {
-	if (*s == '\0')
-	printf("\n");
-	printf("%c", *s);
-	_puts_recursion(++s);
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	_puts_recursion("Puts with recursion");
-	return (0);
+	if (*s == 0)
+	{
+	_putchar('\n');
+	return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
