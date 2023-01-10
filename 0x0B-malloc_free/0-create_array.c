@@ -1,20 +1,30 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * malloc_checked - Entry Point
- * @b: input amount
+ * create_array - creates space for array
+ * @c: char
+ * @size: unsigned int
  *
- * Return: pointer to new mem
+ * Return: char
  */
 
-void *malloc_checked(unsigned int b)
+char *create_array(unsigned int size, char c)
 {
-	void *n;
+	unsigned int i;
+	char *x;
 
-	n = malloc(b);
-	if (n == NULL)
-	exit(98);
-	return (n);
+	if (size == 0)
+		return (NULL);
+	x = malloc(size * sizeof(char));
+	if (x == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; i < size; i++)
+	{
+		x[i] = c;
+	}
+	return (x);
 }
