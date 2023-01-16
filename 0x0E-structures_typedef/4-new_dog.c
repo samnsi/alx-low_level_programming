@@ -17,6 +17,7 @@ len++;
 return (len);
 }
 
+
 /**
 *_strcopy - copy string pointed by src
 *into dest variable
@@ -34,6 +35,8 @@ dest[index] = src[index];
 dest[index] = '\0';
 return (dest);
 }
+
+
 
 /**
 *new_dog - creates a new dog
