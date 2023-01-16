@@ -1,9 +1,7 @@
-#include <stdio.h>
 #include "dog.h"
-#include <stdlib.h>
 
 /**
- * print_dog - A function that prints a struct dog in a programme
+ * print_dog - prints a struct dog
  * @d: Information of the dog
  *
  */
