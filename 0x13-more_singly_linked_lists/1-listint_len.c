@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
- * listint_int - singly linked list
+ * listint_len - singly linked list
  * @h: pointer to the head
  *
  * Return: the number of element in the listint_t list
@@ -12,7 +12,6 @@
 size_t listint_len(const listint_t *h)
 {
 	size_t nodes = 0;
-	const listint_t *current = h;
 
 	while (h)
 	{
